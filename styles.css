@@ -1,0 +1,91 @@
+.title {
+
+    display: flex;
+    justify-content: center;
+    font-size: 70px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+body{
+    color: blueviolet;
+}
+
+.gameboard {
+
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px;
+    background-color: blueviolet;
+    padding: 20px;
+    border-radius: 10px;
+    
+
+}
+
+.square {
+
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid blueviolet;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+/*.color-square{
+    background-color: rgba(255, 255, 255, 0.8);
+}*/
+
+.color-one{
+    background-color: aliceblue;
+}
+
+.color-two{
+    background-color: rgb(255, 250, 240);
+}
+
+.controls,
+.message {
+    text-align: center;
+    margin: 20px 0;
+}
+
+input {
+    font-size: 16px;
+    padding: 10px 10px 10px 5px;
+    width: 200px;
+    border: none;
+    border-bottom: 1px solid blueviolet;
+    background: transparent;
+    color: blueviolet;
+}
+
+input:focus {
+    outline: none;
+}
+
+.start-btn{
+    border-radius: 10px;
+    background-color: blueviolet;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.message{
+    font-size: 40px;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+label{
+    font-weight: bold;
+}
+
