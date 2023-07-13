@@ -1,4 +1,5 @@
 let players = [];
+let gameStart = false;
 
 const Gameboard = (() => {
 
@@ -14,10 +15,10 @@ const Gameboard = (() => {
 
             let playerColor;
 
-            if(square=="X"){
+            if (square == "X") {
                 playerColor = "color-one";
 
-            }else if(square=="O"){
+            } else if (square == "O") {
                 playerColor = "color-two";
             }
 
@@ -73,7 +74,7 @@ const Game = (() => {
     //players click on the gameboard to place their marker
     const handleClick = (event) => {
 
-        if (gameOver) {
+        if (gameOver || gameStart == false) {
             return;
         }
 
@@ -108,7 +109,7 @@ const Game = (() => {
 
         //switch player
         currentPlayerIndex = currentPlayerIndex === 0 ? 1 : 0;
-
+        
     }
 
     const start = () => {
@@ -196,5 +197,6 @@ restartBtn.addEventListener('click', () => {
 
     //start game after click Start button
     Game.start();
+    gameStart = true;
 })
 
